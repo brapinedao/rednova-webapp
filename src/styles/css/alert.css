@@ -1,0 +1,35 @@
+.custom-alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+  z-index: 9999;
+  opacity: 1;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+
+.custom-alert.hide {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.custom-alert--success {
+  background-color: #4caf50;
+}
+.custom-alert--error {
+  background-color: #f44336;
+}
+.custom-alert--warning {
+  background-color: #ff9800;
+}
+.custom-alert--info {
+  background-color: #2196f3;
+}
+.custom-alert--default {
+  background-color: #607d8b;
+}

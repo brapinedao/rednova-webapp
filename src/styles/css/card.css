@@ -1,0 +1,88 @@
+.rn-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.rn-card__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.rn-card__icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rn-card__icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.rn-card__titles {
+  flex-grow: 1;
+}
+
+.rn-card__title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.rn-card__subtitle {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.rn-card__actions {
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rn-card__content {
+  font-size: 1rem;
+  color: #444;
+}
+
+.permission-section {
+  margin-bottom: 20px;
+}
+
+.permission-options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.permission-option-btn {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.permission-option-btn:hover {
+  background-color: #ffe066;
+  border-color: #e6b800;
+  color: #000;
+}
