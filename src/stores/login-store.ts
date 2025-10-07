@@ -1,5 +1,6 @@
 // vue - pinia
 import { defineStore } from 'pinia'
+import api from '@/services/api'
 
 // interfaces
 import type { ILoginData, ILoginResponse, IPermissions } from '@/interfaces/globals'
@@ -15,22 +16,22 @@ export const useLoginStore = defineStore('login', {
   }),
   actions: {
     async login(login: ILoginData) {
-      console.log(login)
       if (this.logoutTimer !== null) {
         clearTimeout(this.logoutTimer)
         this.logoutTimer = null
       }
-      this.data_request = {
-        name: 'Brian Pineda',
-        email: 'brian@gmail.com',
-        photo:
-          'https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg',
-      }
 
-      this.logoutTimer = window.setTimeout(() => {
-        this.logout()
-      }, SESSION_TIMEOUT)
-      return true
+      try {
+        const response = await api.post('/login', login)
+        this.data_request = response.data
+        this.logoutTimer = window.setTimeout(() => {
+          this.logout()
+        }, SESSION_TIMEOUT)
+        return true
+      } catch (error) {
+        console.error('Error al iniciar sesión:', error)
+        return false
+      }
     },
     async logout() {
       if (this.logoutTimer !== null) {

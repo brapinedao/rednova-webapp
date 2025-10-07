@@ -40,9 +40,7 @@ onMounted(() => {
 })
 
 // actions
-const onChildClick = (permission: IPermissions, child: IChildrenPermissions) => {
-  console.log(permission, child)
-}
+const onChildClick = (permission: IPermissions, child: IChildrenPermissions) => {}
 </script>
 
 <style scoped>

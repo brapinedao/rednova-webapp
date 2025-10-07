@@ -1,39 +1,45 @@
-# rednova-webapp
+# 🚀 Rednova WebApp
 
-This template should help get you started developing with Vue 3 in Vite.
+Aplicación web desarrollada con **Vue 3**, **Vite** y **TypeScript**.  
+Este proyecto está configurado para un entorno de desarrollo moderno, rápido y escalable.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🧠 Descripción
 
-## Type Support for `.vue` Imports in TS
+**Rednova WebApp** es una aplicación frontend construida con el framework Vue 3 y el bundler Vite, aprovechando la tipificación de TypeScript y herramientas de desarrollo modernas como ESLint y Prettier para mantener un código limpio y mantenible.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+---
 
-## Customize configuration
+## 🛠️ Tecnologías principales
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- [Vue 3](https://vuejs.org/) - Framework progresivo de JavaScript
+- [Vite](https://vite.dev/) - Bundler rápido para desarrollo moderno
+- [TypeScript](https://www.typescriptlang.org/) - Tipado estático para mayor robustez
+- [Pinia](https://pinia.vuejs.org/) - Manejador de estado de nueva generación
+- [Axios](https://axios-http.com/) - Cliente HTTP para consumir APIs
+- [ESLint](https://eslint.org/) - Linter para mantener estándares de código
 
-## Project Setup
+---
 
-```sh
-npm install
-```
+## ⚙️ Requisitos previos
 
-### Compile and Hot-Reload for Development
+Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
-```sh
-npm run dev
-```
+- [Node.js](https://nodejs.org/) versión **18.x** o superior
+- [npm](https://www.npmjs.com/) o [yarn](https://yarnpkg.com/)
+- [Git](https://git-scm.com/) para clonar el repositorio
 
-### Type-Check, Compile and Minify for Production
+---
 
-```sh
-npm run build
-```
+## 🧩 Instalación y configuración
 
-### Lint with [ESLint](https://eslint.org/)
+1. **Clonar el repositorio**
+   git clone https://github.com/tu-usuario/rednova-webapp.git
+   cd rednova-webapp
 
-```sh
-npm run lint
-```
+2. **Instalar dependencias**
+   npm install
+
+3. **Iniciar el servidor local**
+   npm run dev
