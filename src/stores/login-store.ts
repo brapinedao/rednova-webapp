@@ -94,7 +94,11 @@ export const useLoginStore = defineStore('login', {
 
     async createUser(data: IUserToCreate) {
       try {
-        await api.post('/users', data)
+        await api.post('/users', {
+          ...data,
+          image:
+            'https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg',
+        })
         useAlert().showAlert('Usuario creado exitosamente', 'success', 3000)
 
         return true
