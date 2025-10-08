@@ -7,7 +7,7 @@
 
       <form @submit.prevent="handleLogin" style="margin-top: 8px">
         <div class="form-group">
-          <input type="email" v-model="data_login.email" placeholder="Email" required />
+          <input type="text" v-model="data_login.email" placeholder="Usuario" required />
         </div>
         <div class="form-group">
           <input type="password" v-model="data_login.password" placeholder="Password" required />
@@ -31,6 +31,7 @@
 // vue - pinia
 import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
+import router from '@/router'
 
 // scoped style
 import '@/styles/css/login.css'
@@ -46,7 +47,6 @@ const { login } = loginStore
 // composables
 import { useUtils } from '@/composables/useUtils'
 import { useAlert } from '@/composables/useAlert'
-import router from '@/router'
 
 // models
 const data_login = ref<ILoginData>({

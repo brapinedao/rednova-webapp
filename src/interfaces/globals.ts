@@ -4,6 +4,7 @@ export interface IService {
   price: string
   promo: boolean
   img: string
+  description?: string
 }
 
 export interface ICompanyValue {
@@ -29,6 +30,7 @@ export interface ILoginResponse {
   name: string
   email: string
   photo: string
+  rol?: string
 }
 
 export interface IPermissions {
@@ -38,4 +40,27 @@ export interface IPermissions {
 
 export interface IChildrenPermissions {
   title: string
+}
+
+export interface IUsersResponse {
+  id: number
+  username: string
+  password: string
+  name: string
+  image: string
+  rol: string
+}
+
+export interface IUserToCreate {
+  username: string
+  password: string
+  name: string
+  rol: string
+}
+export interface IServiceToCreate {
+  name: string
+  price: string
+  image: string
+  prop: boolean
+  description: string
 }

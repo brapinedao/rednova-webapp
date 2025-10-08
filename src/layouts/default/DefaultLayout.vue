@@ -1,9 +1,11 @@
 <template>
-  <Header ref="headerRef" />
-  <main :style="{ paddingTop: headerHeight + 'px' }">
-    <router-view />
-  </main>
-  <Footer />
+  <div class="layout-container">
+    <Header ref="headerRef" />
+    <main :style="{ paddingTop: headerHeight + 'px' }">
+      <router-view />
+    </main>
+    <Footer />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -29,3 +31,17 @@ onBeforeUnmount(() => {
   window.removeEventListener('resize', updateHeight)
 })
 </script>
+
+<style scoped>
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+</style>

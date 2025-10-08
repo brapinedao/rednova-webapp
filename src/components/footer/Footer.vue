@@ -6,14 +6,6 @@
         <p>{{ address }}<br />{{ phone }}</p>
       </div>
       <div class="footer__section">
-        <h4>ENLACES ADICIONALES</h4>
-        <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
-      </div>
-      <div class="footer__section">
         <h4>SERVICIOS</h4>
         <ul>
           <li><a href="#">Diseño y desarrollo de Software</a></li>
@@ -23,7 +15,7 @@
       </div>
       <div class="footer__section">
         <h4>ACERCA DE</h4>
-        <p>About RedNova.............</p>
+        <p>About RedNova</p>
       </div>
     </div>
     <div class="footer__copy">

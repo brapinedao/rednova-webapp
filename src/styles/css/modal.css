@@ -1,0 +1,148 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 650px;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  animation: modalFadeIn 0.3s ease;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #555;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.modal-close:hover {
+  color: #000;
+  transform: scale(1.1);
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-service-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.modal-service-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-service-text {
+  text-align: left;
+  color: #333;
+}
+
+.modal-service-text h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.modal-service-text p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.modal-service-text p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 600px) {
+  .modal-service-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .modal-service-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    max-width: 250px;
+  }
+
+  .modal-service-text {
+    max-width: 350px;
+  }
+}
+
+.modal-service-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-service-price {
+  margin-top: 20px;
+  font-weight: 600;
+  color: #222;
+  font-size: 1rem;
+}

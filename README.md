@@ -43,3 +43,7 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
 3. **Iniciar el servidor local**
    npm run dev
+
+4. **User & Password**
+   admin@correo.com
+   1234
