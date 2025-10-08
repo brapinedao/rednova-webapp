@@ -48,6 +48,7 @@
 import { RouterLink } from 'vue-router'
 import { ref } from 'vue'
 import { storeToRefs } from 'pinia'
+import router from '@/router'
 
 // store
 import { useLoginStore } from '@/stores/login-store'
@@ -62,5 +63,6 @@ const showDropdown = ref(false)
 const handleLogout = () => {
   showDropdown.value = false
   loginStore.logout()
+  router.push('/')
 }
 </script>
